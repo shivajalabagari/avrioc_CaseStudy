@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Real-Time Metrics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="chart"></canvas>
+    <script>
+        async function fetchData() {
+            const response = await fetch("http://localhost:5001/metrics");
+            const data = await response.json();
+            const labels = data.map(d => d.metric);
+            const values = data.map(d => d.average_interactions);
+
+            new Chart(document.getElementById("chart"), {
+                type: "bar",
+                data: {
+                    labels: labels,
+                    datasets: [{ label: "Interactions", data: values }]
+                }
+            });
+        }
+        fetchData();
+        setInterval(fetchData, 5000);
+    </script>
+</body>
+</html>
