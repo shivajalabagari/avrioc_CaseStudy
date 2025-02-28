@@ -1,0 +1,18 @@
+image: gitpod/workspace-full  # Standard Gitpod image with Docker support
+
+tasks:
+  - init: |
+      echo "Setting up Kafka, MongoDB, and Python..."
+      docker-compose up -d  # Start Kafka and MongoDB
+      pip install -r requirements.txt  # Install dependencies
+  - command: python data_generator.py  # Run Kafka producer
+  - command: python kafka_consumer.py  # Run Kafka consumer
+  - command: python dashboard.py  # Start Flask API
+
+ports:
+  - port: 5001  # Flask API
+    onOpen: open-browser
+  - port: 9092  # Kafka Broker
+    onOpen: ignore
+  - port: 27017  # MongoDB
+    onOpen: ignore
