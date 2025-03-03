@@ -1,2 +1,5 @@
 
 mongodb-data/
+mongodb-data/
+kafka_2.13-3.6.1.tgz
+kafka/libs/rocksdbjni-7.9.2.jar
