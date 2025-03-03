@@ -1,0 +1,9 @@
+cd local
+show databases
+clr
+clear
+ls -lrt
+ls
+dir
+python consumer.py
+show databases

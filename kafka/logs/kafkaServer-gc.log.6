@@ -1,0 +1,46 @@
+[2025-03-03T06:36:25.610+0000][gc,heap] Heap region size: 1M
+[2025-03-03T06:36:25.634+0000][gc     ] Using G1
+[2025-03-03T06:36:25.634+0000][gc,heap,coops] Heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: 32-bit
+[2025-03-03T06:36:27.259+0000][gc,start     ] GC(0) Pause Young (Concurrent Start) (Metadata GC Threshold)
+[2025-03-03T06:36:27.259+0000][gc,task      ] GC(0) Using 1 workers of 1 for evacuation
+[2025-03-03T06:36:27.317+0000][gc,mmu       ] GC(0) MMU target violated: 21.0ms (20.0ms/21.0ms)
+[2025-03-03T06:36:27.317+0000][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.1ms
+[2025-03-03T06:36:27.317+0000][gc,phases    ] GC(0)   Evacuate Collection Set: 56.4ms
+[2025-03-03T06:36:27.317+0000][gc,phases    ] GC(0)   Post Evacuate Collection Set: 1.2ms
+[2025-03-03T06:36:27.317+0000][gc,phases    ] GC(0)   Other: 0.5ms
+[2025-03-03T06:36:27.317+0000][gc,heap      ] GC(0) Eden regions: 45->0(44)
+[2025-03-03T06:36:27.317+0000][gc,heap      ] GC(0) Survivor regions: 0->7(7)
+[2025-03-03T06:36:27.317+0000][gc,heap      ] GC(0) Old regions: 0->1
+[2025-03-03T06:36:27.317+0000][gc,heap      ] GC(0) Humongous regions: 0->0
+[2025-03-03T06:36:27.317+0000][gc,metaspace ] GC(0) Metaspace: 20699K(21248K)->20699K(21248K) NonClass: 18528K(18944K)->18528K(18944K) Class: 2171K(2304K)->2171K(2304K)
+[2025-03-03T06:36:27.317+0000][gc           ] GC(0) Pause Young (Concurrent Start) (Metadata GC Threshold) 45M->7M(1024M) 58.194ms
+[2025-03-03T06:36:27.317+0000][gc,cpu       ] GC(0) User=0.02s Sys=0.01s Real=0.06s
+[2025-03-03T06:36:27.318+0000][gc           ] GC(1) Concurrent Cycle
+[2025-03-03T06:36:27.318+0000][gc,marking   ] GC(1) Concurrent Clear Claimed Marks
+[2025-03-03T06:36:27.318+0000][gc,marking   ] GC(1) Concurrent Clear Claimed Marks 0.063ms
+[2025-03-03T06:36:27.318+0000][gc,marking   ] GC(1) Concurrent Scan Root Regions
+[2025-03-03T06:36:27.322+0000][gc,marking   ] GC(1) Concurrent Scan Root Regions 4.037ms
+[2025-03-03T06:36:27.322+0000][gc,marking   ] GC(1) Concurrent Mark (1.716s)
+[2025-03-03T06:36:27.322+0000][gc,marking   ] GC(1) Concurrent Mark From Roots
+[2025-03-03T06:36:27.322+0000][gc,task      ] GC(1) Using 1 workers of 1 for marking
+[2025-03-03T06:36:27.324+0000][gc,marking   ] GC(1) Concurrent Mark From Roots 1.955ms
+[2025-03-03T06:36:27.324+0000][gc,marking   ] GC(1) Concurrent Preclean
+[2025-03-03T06:36:27.324+0000][gc,marking   ] GC(1) Concurrent Preclean 0.036ms
+[2025-03-03T06:36:27.324+0000][gc,marking   ] GC(1) Concurrent Mark (1.716s, 1.718s) 2.037ms
+[2025-03-03T06:36:27.324+0000][gc,start     ] GC(1) Pause Remark
+[2025-03-03T06:36:27.334+0000][gc,stringtable] GC(1) Cleaned string and symbol table, strings: 8034 processed, 0 removed, symbols: 66043 processed, 30 removed
+[2025-03-03T06:36:27.334+0000][gc            ] GC(1) Pause Remark 7M->7M(1024M) 10.271ms
+[2025-03-03T06:36:27.334+0000][gc,cpu        ] GC(1) User=0.01s Sys=0.00s Real=0.02s
+[2025-03-03T06:36:27.334+0000][gc,marking    ] GC(1) Concurrent Rebuild Remembered Sets
+[2025-03-03T06:36:27.336+0000][gc,marking    ] GC(1) Concurrent Rebuild Remembered Sets 1.446ms
+[2025-03-03T06:36:27.336+0000][gc,start      ] GC(1) Pause Cleanup
+[2025-03-03T06:36:27.337+0000][gc            ] GC(1) Pause Cleanup 7M->7M(1024M) 0.565ms
+[2025-03-03T06:36:27.337+0000][gc,cpu        ] GC(1) User=0.00s Sys=0.00s Real=0.00s
+[2025-03-03T06:36:27.337+0000][gc,marking    ] GC(1) Concurrent Cleanup for Next Mark
+[2025-03-03T06:36:27.351+0000][gc,marking    ] GC(1) Concurrent Cleanup for Next Mark 14.271ms
+[2025-03-03T06:36:27.351+0000][gc            ] GC(1) Concurrent Cycle 33.737ms
+[2025-03-03T06:36:27.984+0000][gc,heap,exit  ] Heap
+[2025-03-03T06:36:27.984+0000][gc,heap,exit  ]  garbage-first heap   total 1048576K, used 49520K [0x00000000c0000000, 0x0000000100000000)
+[2025-03-03T06:36:27.984+0000][gc,heap,exit  ]   region size 1024K, 49 young (50176K), 7 survivors (7168K)
+[2025-03-03T06:36:27.984+0000][gc,heap,exit  ]  Metaspace       used 29179K, capacity 29839K, committed 29952K, reserved 1075200K
+[2025-03-03T06:36:27.984+0000][gc,heap,exit  ]   class space    used 3280K, capacity 3547K, committed 3584K, reserved 1048576K
