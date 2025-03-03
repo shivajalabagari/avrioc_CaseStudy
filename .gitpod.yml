@@ -1,0 +1,10 @@
+tasks:
+  - name: Install Kafka & MongoDB
+    init: ./setup.sh
+  - name: Start Kafka & MongoDB
+    command: |
+      sudo service mongod start
+      sudo service kafka start
+ports:
+  - port: 5000
+    onOpen: open-preview
