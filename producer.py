@@ -5,7 +5,7 @@ import random
 
 # Kafka Config
 KAFKA_TOPIC = "user_interactions"
-KAFKA_BROKER = "localhost:9092"
+KAFKA_BROKER = "kafka:9092"
 
 # Sample Data
 users = ["Alice", "Bob", "Charlie", "David"]
