@@ -1,3 +1,0 @@
-flask==2.1.0  # or the version you're using
-pymongo
-kafka-python
